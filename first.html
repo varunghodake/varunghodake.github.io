@@ -1,24 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Working on</title>
+  <title>Game Details</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+body {
+  background-color: black;
+  background-image: url("a.jpg"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.view img:hover{
+  transform: scale(1.1);
+}
+</style> 
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark navbar-fixed-top">
+  <a class="navbar-brand" href="#">Discord</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Game Type
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Arcade</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Battle Royal</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
  
-<div class="jumbotron jumbotron-fluid" style="padding-top: 20px; padding-bottom: 20px">
-  <div class="container p-1 my-0 bg-dark text-white" style="max-width: 1250px">
-    <img src="smallfirst.jpg" class="float-left" alt="Mayde" width="200" height="136">
+<div class="jumbotron jumbotron-fluid" style="padding-top: 20px; padding-bottom: 20px;background-color: black;opacity: 0.7;">
+  <div class="container p-1 my-0 text-white" style="max-width: 1250px;background-color: black;">
+    <img src="all.jpg" class="float-left" alt="Mayde" width="200" height="136">
     <div class="text-right">
       <h1>Hopefully Better!!</h1>
-      <p>Your are here to get information about Clan</p> 
-      <p>Make your choice better in gaming world</p> 
+      <p>Make your choice better in gaming world with our clan</p>
+      <p>Your are here to get information about Games that our clan playes</p>  
     </div>         
   </div>
+</div>
+
+<div id="carousel-example-3" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+  
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-3" data-slide-to="1"></li>
+    <li data-target="#carousel-example-3" data-slide-to="2"></li>
+    <li data-target="#carousel-example-3" data-slide-to="3"></li>
+  </ol>
+ 
+  <div class="carousel-inner" role="listbox" style="padding-left: 70px;padding-right: 70px;">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="fortnite.jpg" alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Fortnite</h3>
+        <p>Chapter 2</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+     
+      <div class="view">
+        <img class="d-block w-100" src="apex.jpg" alt="Second slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Apex Legends</h3>
+        <p>Season 6</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      
+      <div class="view">
+        <img class="d-block w-100" src="uncharted.jpg" alt="Third slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Uncharted 4</h3>
+        <p>Season 4</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="view">
+        <img class="d-block w-100" src="witcher.jpg" alt="Third slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">The Witcher</h3>
+        <p>Wild Hunt</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 
